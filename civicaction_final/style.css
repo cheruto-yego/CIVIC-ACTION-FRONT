@@ -4,6 +4,13 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#logo {
+  width: 100%;
+  height: auto;
+}
+#logo-link {
+  text-decoration: none;
+}
 #page-top {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(images/tingey-injury-law-firm-yCdPU73kGSc-unsplash.jpg);
