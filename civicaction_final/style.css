@@ -16,6 +16,9 @@
   box-sizing: border-box;
 }
 
+.one{
+  color: #000;
+}
 navbar {
   height: 12%;
   display: flex;
