@@ -16,7 +16,7 @@
   box-sizing: border-box;
 }
 
-.one{
+.one {
   color: #000;
 }
 navbar {
@@ -108,7 +108,7 @@ ul li {
   box-sizing: border-box;
   cursor: pointer;
   margin: 10px 15px;
-  background: gray;
+  background-color: white;
   background-position: center;
   background-size: cover;
 }
