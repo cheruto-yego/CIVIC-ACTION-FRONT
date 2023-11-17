@@ -115,7 +115,7 @@ ul li {
   box-sizing: border-box;
   cursor: pointer;
   margin: 10px 15px;
-  background: white;
+  background: rgb(138, 132, 132);
   background-position: center;
   background-size: cover;
 }
