@@ -180,8 +180,8 @@ header ul li a.active {
 /*==========05) Hero Section Start==========*/
 #hero {
   background: url(../images/jj.jpg);
-  background-size: cover;
-  /*height: 100vh;*/
+  background-size: 120vh;
+  height: 100vh;
   background-repeat: repeat-y;
   width: 100%;
 }
