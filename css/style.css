@@ -425,7 +425,7 @@ header ul li a.active {
 
 @media (max-width: 575px) {
   #lawyers .card {
-    margin: 10px auto;
+    margin: 40px auto;
     width: 60%;
   }
   #clients .clients {

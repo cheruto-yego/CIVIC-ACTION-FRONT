@@ -53,6 +53,8 @@ nav ul li a {
   display: flex;
   height: 88%;
   align-items: center;
+  justify-content: center;
+  margin-left: 70px;
 }
 
 .col {
@@ -118,4 +120,5 @@ ul li {
   background: rgb(138, 132, 132);
   background-position: center;
   background-size: cover;
+  text-align: center;
 }
