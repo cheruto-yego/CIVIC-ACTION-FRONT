@@ -1,0 +1,20 @@
+{
+  "name": "civic-action-front",
+  "version": "1.0.0",
+  "description": "This is an Lawyer website. It is one page webstite & designed with HTML, CSS and Bootstrap. This website is fully responsive in all devices.",
+  "main": "meeting.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheruto-yego/CIVIC-ACTION-FRONT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cheruto-yego/CIVIC-ACTION-FRONT/issues"
+  },
+  "homepage": "https://github.com/cheruto-yego/CIVIC-ACTION-FRONT#readme"
+}

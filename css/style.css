@@ -175,16 +175,61 @@ header ul li a.active {
   color: var(--gold) !important;
   border-bottom: 2px solid var(--gold);
 }
+/* Add this to your existing CSS */
+
+/* Mobile Header Styles */
+@media (max-width: 767px) {
+  header .navbar-brand span {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px; /* Adjust the spacing as needed */
+    right: 0;
+  }
+
+  header ul {
+    padding: 0;
+    text-align: center;
+  }
+
+  header ul li {
+    display: inline-block;
+    margin: 0 10px; /* Adjust the spacing as needed */
+  }
+
+  header ul li a {
+    padding: 10px;
+    display: block;
+  }
+
+  header ul li a:hover {
+    border-bottom: none;
+  }
+}
+
 /*==========04) Header Section End==========*/
 
 /*==========05) Hero Section Start==========*/
+
+/* #hero {
+  background: url(../images/jj.jpg);
+  background-size: cover;
+  height: 100%;
+  background-repeat: repeat-y;
+  width: 100%;
+} */
 #hero {
   background: url(../images/jj.jpg);
   background-size: cover;
-  height: 100vh;
-  background-repeat: repeat-y;
+  height: 100vh; /* Use the full height of the viewport */
+  background-repeat: no-repeat; /* Prevent repeating the background image */
   width: 100%;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
 }
+
 #hero .hero-content {
   padding-top: 315px;
 }
