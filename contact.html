@@ -124,18 +124,18 @@
               
                         
                   <div class="form-box login col-md-4 offset-md-1" action=".">
-                    <form id="form" class="form">
-                      <input type="email" placeholder="Enter email..." required class="form-control">
+                    <form id="form" class="form" action="#" method="post" onsubmit="submitForm(event)">
+                      <input type="email" id="emailInput" placeholder="Enter email..." required class="form-control">
             
                       <!-- <input type="text" placeholder="Enter name..." required class="form-control"> -->
-                      <input type="text" placeholder="Enter name..." required class="form-control">
+                      <input type="text" id="usernameInput" placeholder="Enter name..." required class="form-control">
             
                       <!-- <input type="text" placeholder="Enter number..." required class="form-control"> -->
-                      <input type="text" placeholder="Enter number..." required class="form-control">
+                      <input type="text" id="clientNumberInput" placeholder="Enter number..." required class="form-control">
             
-                      <input type="password" placeholder="Set A Password..." required class="form-control">
+                      <input type="password" id="passwordInput" placeholder="Set A Password..." required class="form-control">
             
-                      <a type="submit" class="btn btn-custom text-center">Sign in</a>
+                      <a type="submit" class="btn btn-custom text-center" onclick="signup()">Sign in</a>
                       <a href="indexx.html" type="submit" class="btn btn-custom text-center">Make call</a>
                       <div class="register-link">
                         <p>Don't have an account?<a href="#">Register</a></p>
@@ -184,6 +184,35 @@
 
 
     <script src="./js/contact.js"></script>
+    <script>function signup() {
+      const email = document.getElementById("emailInput").value;
+      const username = document.getElementById("usernameInput").value;
+      const clientNumber = document.getElementById("clientNumberInput").value;
+      const password = document.getElementById("passwordInput").value;
+    
+      const formData = {
+        email,
+        username,
+        client_number: clientNumber,
+        password,
+      };
+    
+      fetch('http://localhost:3001/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+        .then(response => response.json())
+        .then(data => {
+          // Handle the response from the backend
+          console.log(data);
+          // Perform additional actions as needed
+        })
+        .catch(error => console.error('Error:', error));
+    }
+    </script>
    
     </body>
 </html>
