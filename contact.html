@@ -104,7 +104,7 @@
               <div class="wrapper row pt-5">
           
                 <div class="form-box register col-md-4 offset-md-1" action=".">
-                  <form class="form" id="form">
+                  <form class="form" id="form" id="signupForm" action="/action" method="POST" onsubmit="submitForm(event)">
                     <input type="email" placeholder="Enter email..." required class="form-control">
           
                     <input type="text" placeholder="Enter name..." required class="form-control">
@@ -113,13 +113,14 @@
           
                     <input type="password" placeholder="Set A Password..." required class="form-control">
           
-                    <a href="choose.html" type="submit" class="btn btn-custom text-center">Sign up</a>
+                    <a href="indexx.html" type="submit" class="btn btn-custom text-center">Sign up</a>
                     <div class="login-link">
-                      <p>Already have an account?<a href="#">Sign in</a></p>
+                      <p>Already have an account?<a href="indexx.html">Sign in</a></p>
                       <p id="meetLink"></p>
                     </div>
                   </form>
                 </div>
+                <script></script>
               
                         
                   <div class="form-box login col-md-4 offset-md-1" action=".">
@@ -134,7 +135,8 @@
             
                       <input type="password" placeholder="Set A Password..." required class="form-control">
             
-                      <a href="choose.html" type="submit" class="btn btn-custom text-center">Sign in</a>
+                      <a type="submit" class="btn btn-custom text-center">Sign in</a>
+                      <a href="indexx.html" type="submit" class="btn btn-custom text-center">Make call</a>
                       <div class="register-link">
                         <p>Don't have an account?<a href="#">Register</a></p>
                       </div>
@@ -151,6 +153,8 @@
 
       
       <!-- JQuery JS -->
+
+      
   <script type="text/javascript" src="./vendor/jquery/jquery.min.js"></script>
 
   <!-- Popper  JS -->
@@ -180,27 +184,7 @@
 
 
     <script src="./js/contact.js"></script>
-    <script>
-      document.getElementById("generateMeetLinkBtn").addEventListener("click", function() {
-          var meetLink = generateGoogleMeetLink();
-          displayMeetLink(meetLink);
-      });
-      
-      function generateGoogleMeetLink() {
-          // You can customize this function based on your requirements.
-          // For simplicity, this example generates a random meeting code.
-          var meetingCode = Math.random().toString(36).substring(7); // Generate a random string
-      
-          // Form the Google Meet link with the generated meeting code
-          var googleMeetLink = "https://meet.google.com/" + meetingCode;
-      
-          return googleMeetLink;
-      }
-      
-      function displayMeetLink(link) {
-          document.getElementById("meetLink").innerHTML = "Google Meet Link: <a href='" + link + "' target='_blank'>" + link + "</a>";
-      }
-      </script>
+   
     </body>
 </html>
 
