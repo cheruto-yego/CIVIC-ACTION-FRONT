@@ -280,6 +280,7 @@ header ul li a.active {
 /*==========08) Lawyers Section Start==========*/
 #lawyers .card {
   transition: all 0.7s ease;
+  border: 3px solid #cecbcb;
 }
 #lawyers .card:hover {
   cursor: pointer;
@@ -288,6 +289,7 @@ header ul li a.active {
 }
 #lawyers .card-body {
   padding: 5px;
+  
 }
 #lawyers .card-body p {
   margin-bottom: 5px;

@@ -26,6 +26,17 @@
 
   <title>ETTAKA_LYO</title>
   <style>
+      h1 {
+            font-size: 24px; /* Default font size for larger screens */
+        }
+
+        /* Media query for screens smaller than 600px (typical for mobile phones) */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 16px; /* Adjust font size for smaller screens */
+            }
+        }
+
      .contact-btn {
             display: block;
             margin-top: 15px;
@@ -39,7 +50,40 @@
             cursor: pointer;
         }
         .lawprof{
+            
+            font-family: 'Lucida Sans', sans-serif;
+            font-size: 16px;
+            font-style: italic;
+            font-weight: bold;
+            color:rgb(221, 164, 18);
             display:ruby-base-container;
+            width: 65%;
+            margin: auto;
+            padding: 30px;
+            border: 3px solid #ccc;
+            background-color: rgb(71, 70, 70);
+
+        }
+        @media (max-width: 600px){
+            .lawprof{
+            
+            font-family: 'Lucida Sans', sans-serif;
+            font-size: 16px;
+            font-style: italic;
+            font-weight: bold;
+            color:rgb(221, 164, 18);
+            display:ruby-base-container;
+            width: 90%;
+            margin: auto;
+            padding: 30px;
+            border: 3px solid #ccc;
+            background-color: rgb(71, 70, 70);
+
+        }
+
+        }
+        .card_content{
+            color:rgb(243, 242, 238);
         }
   </style>
 </head>
@@ -104,8 +148,9 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="lawprof">
                 <h1>AMANDA JEAN</h1>
+                <div class="card_content">
                 <p>Specializing in legal issues concerning land</p>
                 <p>Qualifications:</p>
                 <ul>
@@ -122,6 +167,7 @@
                 <!-- Call button linking to contact.html -->
                 <a class="contact-btn" href="contact.html">Call Now</a>
             </div>
+        </div>
             <!-- <div class="col-md-5  pt-5">
                 <a href="contact.html" class="btn btn-custom">Button</a>
       
