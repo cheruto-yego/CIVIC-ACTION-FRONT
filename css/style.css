@@ -426,7 +426,96 @@ header ul li a.active {
   color: var(--fluorescent-cyan);
   font-family: var(--Inconsolata);
 }
+@media (max-width: 767px) {
+  .form-control {
+    border: none;
+    border-bottom: 1px solid #999;
+    margin-bottom: 10px;
+    padding: 15px 1px;
+    outline: none;
+    width: 18rem;
+    font-family: var(--Inconsolata);
+  }
+  /* #message{
+    padding:50px 0;
+  } 
+  */
+  .form .btn {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 20px;
+    width: 7rem;
+    background-color: var(--gold);
+    border: none;
+    color: #111;
+    font-weight: 600;
+  }
+  .form .btn:hover {
+    background-color: #111;
+    color: var(--gold);
+  }
+  .map {
+    box-shadow: -25px 25px 1px var(--gold);
+  }
 
+  .wrapper {
+    position: relative;
+    width: 420px;
+    height: 440px;
+    background: var(--marian-blue);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 10px;
+    left: 40%;
+    padding: 30px 40px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: height 0.2s ease;
+  }
+
+  /* Add these lines to your existing CSS code */
+
+  .wrapper .form-box {
+    width: 100%;
+    transition: transform 0.18s ease;
+  }
+
+  .wrapper .form-box.login {
+    transition: transform 0.18s ease;
+    transform: translateX(0);
+    right: 2rem;
+  }
+  .wrapper .form-box.register {
+    position: absolute;
+    transform: translateX(400px);
+  }
+
+  .wrapper.active .form-box.login {
+    transition: none;
+    transform: translateX(-400px);
+  }
+
+  .wrapper.active .form-box.register {
+    transition: transform 0.18s ease;
+    transform: translateX(0);
+  }
+
+  .login-link a,
+  .register-link a {
+    text-decoration: none; /* Remove text decoration */
+    color: var(--gold); /* Set the color for the links */
+  }
+
+  .login-link a:hover,
+  .register-link a:hover {
+    text-decoration: solid; /* Add underline on hover if needed */
+    color: var(--fluorescent-cyan);
+    font-family: var(--Inconsolata);
+  }
+}
 /*==========12) Contact Section End========*/
 
 /*==========13) Footer Section Start==========*/
