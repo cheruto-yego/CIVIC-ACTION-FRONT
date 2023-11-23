@@ -13,7 +13,9 @@ They are then prompted to choose a lawyer of their own choice.
 On choosing a lawyer they are provided with the information of that particular lawyer.
 And then on that note they can then press the call now on  the lawyer page if they wish.
 they are then taken to the page were they can schedule a call by inputing their details,(email, name, phone number and password of their choosing)
-On doing that they can then access the call page where they input a user name and join the call.
+On doing that they can then access the call page where they input a user name and join the call
+
+
 
 
 ## Call access
