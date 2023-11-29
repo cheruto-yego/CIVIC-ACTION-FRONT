@@ -7,7 +7,7 @@
   width: 100%;
   margin: 0;
    padding: 0;
-   bottom: 200%;
+   
   background: url(pic/bg.jpg);
   background-position: center;
   background-size: cover;
@@ -15,6 +15,16 @@
 
   font-family: sans-serif;
   box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  /* Adjustments for screens up to 768px wide */
+  .main {
+    height: 100vh; /* Change height for smaller screens */
+    background-size: contain; 
+    background: url(pic/bg.jpg);
+    /* Modify background size */
+    /* Other adjustments for smaller screens */
+  }
 }
 /* styles.css */
 
@@ -71,11 +81,17 @@ ul li a:hover{
 }
 
 .info{
-  margin-left: 7%;
-  margin-top: 6%;
-  position:absolute;
+  margin-right: 20%;
+  margin-left: 6%;
+    margin-top: 15%;
+  display: inline-block;
+  flex-wrap: wrap;
+  /* padding-top: 10%;
+  padding-bottom: 3%; */
+  /* position:absolute;
   top: 150%;
-  bottom: 20%;
+  bottom: 20%; */
+
 }
 
 .about-us{
@@ -91,6 +107,11 @@ ul li a:hover{
   font-size: 65px;
   color: rgb(14, 13, 13);
 }
+
+/* #phrase{
+  left: 5%;
+  margin-left: 7%;
+} */
 
 .info h3{
   font-size: 18px;
@@ -111,7 +132,8 @@ ul li a:hover{
 
 /* Custom button style */
 .btn-custom {
-  text-decoration: aliceblue;
+  text-decoration: #ffff ;
+  color: aliceblue; 
   /* Your custom button styles */
   /* For example: */
   background-color: #154d72;
@@ -119,7 +141,7 @@ ul li a:hover{
   width: 180px;
   border-radius: 5px;
   padding: 10px 20px;
-  margin-bottom: 320px;
+  /* margin-bottom: 320px; */
   transition: background-color 0.3s ease;
 }
 /* 
@@ -149,6 +171,7 @@ ul li a:hover{
   height: 500px; /* Adjust height if needed */
 }
 
+
 .container img {
   position: absolute;
   bottom: -20%;
@@ -156,7 +179,27 @@ ul li a:hover{
   width: 500px; /* Adjust image width */
   height: auto; /* Maintain aspect ratio */
 }
+@media (max-width: 768px) {
+  .info {
+    position: static; /* Remove absolute positioning */
+    margin: 10px; /* Adjust margins for spacing */
+    text-align: center; /* Center the text */
+  }
 
+  .info h1{
+    font-size: 35px;
+    color: rgb(14, 13, 13);
+  }
+
+  .container img {
+    position: relative; /* Place the image below the text */
+    width: 80%; /* Adjust image width */
+    max-width: 350px; /* Set a maximum width for smaller screens */
+    display: block;
+    height: auto;
+    margin: 30px auto 10px; /* Adjust margins for spacing */
+  }
+}
 
 .image:hover .lawyer{
   left: 100%;
@@ -167,10 +210,9 @@ ul li a:hover{
 .bounce-image {
   width: 350px;
   /* Other styles for your image */
-  position: absolute;
+  position: relative;
   height: 200%;
   bottom: 0;
-
   animation: bounce 2s infinite; /* Apply the bounce animation */
 }
 
