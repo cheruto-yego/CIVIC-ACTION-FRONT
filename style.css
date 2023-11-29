@@ -1,84 +1,135 @@
-* {
-  margin: 0px;
+*{
+  margin: 0;
   padding: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#logo {
+.main{
   width: 100%;
-  height: auto;
-}
-#logo-link {
-  text-decoration: none;
-}
-#page-top {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(images/tingey-injury-law-firm-yCdPU73kGSc-unsplash.jpg);
-  /* height: 100vh;
-  background-size: cover;
+  margin: 0;
+   padding: 0;
+   bottom: 200%;
+  background: url(pic/bg.jpg);
   background-position: center;
-  min-height: 100px;
-  padding-left: 8%;
-  padding-right: 8%;
-  box-sizing: border-box; */
-}
+  background-size: cover;
+  height: 120vh;
 
-.one {
-  color: #000;
+  font-family: sans-serif;
+  box-sizing: border-box;
 }
-navbar {
-  height: 12%;
+/* styles.css */
+
+/* Style for the logo
+.logo {
+  width: 500px;
+  height:200px;
+  border: 2px solid white;
+  border-radius: 8px;
+  Add any other styles you want here */
+  
+/* }
+ */
+
+.navbar{
+  width: 86%;
   display: flex;
+  margin: auto;
+  padding: 15px 0;
   align-items: center;
+  justify-content: space-between;
 }
 
-nav {
-  flex: 1;
-  text-align: right;
+.navbar .logo{
+  width: 160px;
+  cursor: pointer;
+  margin-top: -3%;
+  margin-left: -2%;
 }
 
-nav ul li {
+ul{
+  position:fixed left;
+  margin-top: 10%;
+}
+
+ul li{
   list-style: none;
   display: inline-block;
-  margin-left: 60px;
+  padding: 10px 16px;
 }
 
-nav ul li a {
+ul li a{
+  font-size: 25px;
+  font-weight: bold;
   text-decoration: none;
-  color: #0e0c0c;
-  font-size: 12px;
+  color: rgb(8, 10, 10);
+  margin-top: -3%;
+  transition: .4s ease;
+
 }
 
-.row {
-  display: flex;
-  height: 88%;
-  align-items: center;
-  justify-content: center;
-  margin-left: 70px;
+ul li a:hover{
+  color:rgb(38, 38, 219);
 }
 
-.col {
-  flex-basis: 50%;
+.info{
+  margin-left: 7%;
+  margin-top: 6%;
+  position:absolute;
+  top: 150%;
+  bottom: 20%;
 }
 
-h1 {
-  color: #fff;
-  font-size: 50px;
-  font-weight: 600;
+.about-us{
+  margin-left: 7%;
+  margin-top : 6%;
+  position:absolute;
+  top : 150%;
+  bottom : 100%;
 }
 
-h2 {
-  color: #fff;
-  font-size: 30px;
-  font-weight: 200;
+
+.info h1{
+  font-size: 65px;
+  color: rgb(14, 13, 13);
 }
 
-p {
-  color: #fff;
-  font-size: 11px;
-  line-height: 15px;
+.info h3{
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 24px;
 }
-button {
+
+.info span{
+  color:rgb(19, 19, 94);
+}
+
+
+.info a:hover{
+  background: rgb(59,174,209);
+}
+/* Additional custom CSS styles */
+/* ... */
+
+/* Custom button style */
+.btn-custom {
+  text-decoration: aliceblue;
+  /* Your custom button styles */
+  /* For example: */
+  background-color: #154d72;
+  border: none;
+  width: 180px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 320px;
+  transition: background-color 0.3s ease;
+}
+/* 
+.btn-custom:hover {
+  background-color: #ff6600; /* Change the color on hover */
+/* } */ */
+
+
+/* Styles for the button */
+/* button {
   width: 180px;
   color: #000;
   font-size: 12px;
@@ -88,38 +139,51 @@ button {
   border-radius: 20px;
   outline: none;
   margin-bottom: 30px;
+} */
+/* Glow effect on hover */
+
+
+.container {
+  position: relative;
+  width: 100%; /* Adjust width if needed */
+  height: 500px; /* Adjust height if needed */
 }
 
-.logo {
-  width: 50px;
-  cursor: pointer;
+.container img {
+  position: absolute;
+  bottom: -20%;
+  right: 0%;
+  width: 500px; /* Adjust image width */
+  height: auto; /* Maintain aspect ratio */
 }
 
-ul {
-  float: right;
-  list-style-type: none;
-  margin-top: 30px;
-  min-height: 400px;
-  margin-right: 60px;
-  font-size: 17px;
+
+.image:hover .lawyer{
+  left: 100%;
+}
+/* styles.css */
+
+/* Style for the bouncing image */
+.bounce-image {
+  width: 350px;
+  /* Other styles for your image */
+  position: absolute;
+  height: 200%;
+  bottom: 0;
+
+  animation: bounce 2s infinite; /* Apply the bounce animation */
 }
 
-ul li {
-  display: inline-block;
-}
 
-.card {
-  width: 200px;
-  height: 230px;
-  display: inline-block;
-  border-radius: 10px;
-  padding: 15px 25px;
-  box-sizing: border-box;
-  cursor: pointer;
-  margin: 10px 15px;
-  background: rgb(138, 132, 132);
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  
+/* Define the bouncing animation */
+@keyframes bounce {
+  0% {
+    transform: translateY(0); /* Initial position */
+  }
+  50% {
+    transform: translateY(-20px); /* Bounce up */
+  }
+  100% {
+    transform: translateY(0); /* Return to the original position */
+  }
 }

@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main{
+    width: 100%;
+    margin: 0;
+     padding: 0;
+     bottom: 200%;
+    background: url(pic/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 120vh;
+  
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+  /* styles.css */
+  
+  /* Style for the logo
+  .logo {
+    width: 500px;
+    height:200px;
+    border: 2px solid white;
+    border-radius: 8px;
+    Add any other styles you want here */
+    
+  /* }
+   */
+  
+  .navbar{
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar .logo{
+    width: 160px;
+    cursor: pointer;
+    margin-top: -3%;
+    margin-left: -2%;
+  }
+  
+  ul{
+    position:fixed left;
+    margin-top: 10%;
+  }
+  
+  ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+  }
+  
+  ul li a{
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(8, 10, 10);
+    margin-top: -3%;
+    transition: .4s ease;
+  
+  }
+  
+  ul li a:hover{
+    color:rgb(38, 38, 219);
+  }
+  

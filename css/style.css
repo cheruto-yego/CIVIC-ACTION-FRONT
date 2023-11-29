@@ -1,739 +1,119 @@
-/*
-	==========Index==========
-	01) Import Section
-	02) Variable Section
-	03) Global CSS
-	04) Header Section
-	05) Hero Section
-	06) About Us Section
-	07) Practice Area Section
-	08) Lawyers Section
-	09) Clients Section 
-	10) Publication Section
-	11) FAQ Section
-	12) Contact Section
-	13) Footer Section
-	========================
-*/
-
-/*==========01) Import Section Start==========*/
-@import url("../css/fonts.css");
-/*==========01) Import Section End==========*/
-
-/*==========02) Variable Section Start==========*/
-:root {
-  /*Theme Colors*/
-  --text-gray: #3f4954;
-  --text-light: #686666da;
-  --bg-color: #0f0f0f;
-  --white: #ffffff;
-  --mid-night: #104f55;
-  /* New Colors */
-  --gold: #ffd633ff;
-  --marian-blue: #28427bff;
-  --battleship-gray: #8f8f8fff;
-  --fluorescent-cyan: #42f0eaff;
-  --night: #141414ff;
-
-  /*Gradient Color*/
-  --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-
-  --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
-  --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
-
-  /*=========Font Family==========*/
-
-  /* Abel */
-  /* --Abel:'Abel', cursive; */
-  --Abel: "Abel", cursive;
-
-  /* Alegreya */
-  --Alegreya: "Alegreya", cursive;
-
-  /* Inconsolata */
-  --Inconsolata: "Inconsolata", cursive;
-
-  /* Josefin */
-  --Josefin: "Josefin", cursive;
-
-  /* Lexend */
-  --Lexend: "Lexend", cursive;
-
-  /* Poppins */
-  --Poppins: "Poppins", cursive;
-}
-/*==========02) Variable Section End==========*/
-
-/*==========03) Global CSS Section Start=========*/
-section {
-  padding: 80px 0;
-}
-.img-center {
-  display: block;
-  margin: 0 auto;
-}
-.no-padding {
+.body {
+  margin: 0;
   padding: 0;
+  background-color: #28427b;
+  color: aliceblue;
+  font-family: "Poppins", sans-serif;
 }
-h1 {
-  font-family: var(--Josefin);
-  font-size: 2.5rem;
-}
-h2 {
-  font-family: var(--Lexend);
-  font-size: 2rem;
-}
-h3 {
-  font-family: var(--Abel);
-  font-size: 1.5rem;
-}
-p {
-  font-family: var(--Abel);
-  font-size: 16px;
-  line-height: 30px;
-}
-h5 {
-  font-size: 22px;
-  font-weight: 500;
-  font-family: "Raleway", sans-serif;
-}
-h6 {
-  font-weight: 700;
-  font-family: "Varela Round", sans-serif;
-}
-label {
-  font-family: var(--Alegreya);
-}
-.btn-custom {
-  display: block;
+
+.main {
+  width: 1400px;
   margin: 0 auto;
-  padding: 6px 20px;
-  background-color: var(--gold);
-  border: none;
-  color: #111;
+  height: 75vh;
 }
-.btn-custom:hover {
-  background-color: #111;
-  color: var(--gold);
+
+#site-title {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.btn:active,
-.btn:focus {
-  outline: none !important;
-  box-shadow: none;
-}
-.form-control:focus {
-  border-color: #80bdff;
-  box-shadow: none !important;
-}
-.navbar_fixed {
+
+#join-wrapper {
+  display: flex;
+  flex-direction: column;
   position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#username {
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px;
+}
+
+.volume-icon {
+  height: 20px;
+  width: 20px;
+}
+
+#join-btn {
+  background-color: #1f1f1f8e;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  padding: 20px 30px;
+  cursor: pointer;
+}
+
+#user-streams {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 1em;
+  height: 100%;
+}
+
+.video-player {
   width: 100%;
-  top: -1px;
-  left: 10px;
-  right: 10px;
-  background: #ffffff;
-  box-shadow: var(--box-shadow);
-  z-index: 999;
-  transition: all 1s ease;
-  padding: 0.5rem 1rem;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
 }
-/*==========03) Global CSS Section End=========*/
 
-/*==========04) Header Section Start==========*/
-header .navbar-brand {
+.video-containers {
   position: relative;
+  padding: 0;
+  margin: 0;
+  background-color: #1f1f1f8e;
+  border-radius: 10px;
 }
 
-#header {
-  /* background: var(--marian-blue); */
-  background-color: #fff;
-}
-
-header .navbar-brand span {
-  width: 10px;
-  height: 10px;
-  background: var(--gold);
+.user-uid {
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+  background-color: #1f1f1f8e;
+  padding: 5px 10px;
+  border-radius: 5px;
   position: absolute;
   bottom: 10px;
-  border-radius: 100%;
-  right: 110px;
-}
-header ul li a {
-  padding: 10px;
-  color: #111;
-  text-transform: uppercase;
-  font-family: var(--Poppins);
-  font-weight: 800;
-  font-size: 1.5em;
-}
-header ul li a:hover {
-  border-bottom: 2px solid var(--gold);
-  cursor: pointer;
-  font-family: var(--Inconsolata);
-}
-header ul li a.active {
-  color: var(--gold) !important;
-  border-bottom: 2px solid var(--gold);
-}
-/* Add this to your existing CSS */
-
-/* Mobile Header Styles */
-@media (max-width: 767px) {
-  header .navbar-brand span {
-    position: relative;
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px; /* Adjust the spacing as needed */
-    right: 0;
-  }
-
-  header ul {
-    padding: 0;
-    text-align: center;
-  }
-
-  header ul li {
-    display: inline-block;
-    margin: 0 10px; /* Adjust the spacing as needed */
-  }
-
-  header ul li a {
-    padding: 10px;
-    display: block;
-  }
-
-  header ul li a:hover {
-    border-bottom: none;
-  }
-}
-
-/*==========04) Header Section End==========*/
-
-/*==========05) Hero Section Start==========*/
-
-/* #hero {
-  background: url(../images/jj.jpg);
-  background-size: cover;
-  height: 100%;
-  background-repeat: repeat-y;
-  width: 100%;
-} */
-#hero {
-  background: url(../images/jj.jpg);
-  /* background-size: cover;
-  height: 100vh; /* Use the full height of the viewport */
-  /* background-repeat: no-repeat; /* Prevent repeating the background image */
-  /* width: 100%;
-  display: flex;
-  align-items: center; /* Center vertically */
-  /* justify-content: center; Center horizontally */
-  max-width: 100%;
-  height: 100%;
-  background-repeat:no-repeat;
-  background-position: right;
-  width: 290%;
-} 
-
-#hero .hero-content {
-  padding-top: 100px;
-}
-#hero .hero-heading,
-.about-heading,
-.clients-heading,
-.practice-heading,
-.publication-heading,
-.faq-heading,
-.contact-heading {
-  padding: 0 10px;
-  border-left: 4px solid var(--gold);
-  line-height: 20px;
-}
-#hero .hero-heading h1 {
-  letter-spacing: 5px;
-  font-size: 4rem;
-}
-#hero .btn {
+  left: 10px;
+  z-index: 9999;
   margin: 0;
-  border-radius: 20px;
-  padding: 10px 25px;
-}
-/*==========05) Hero Section End==========*/
-
-/*==========06) About Us Section Start==========*/
-.about-heading,
-.lawyers-heading,
-.publication-heading {
-  background: url(./images/hh.jpg) no-repeat;
-  background-size: 20% 100%;
-  border-left: 2px solid var(--gold);
-  padding: 0 20px;
-}
-/*==========06) About Us Section End==========*/
-
-/*==========07) Practice Area Section Start==========*/
-#practice-area,
-#clients,
-#faq {
-  background-color: #1c1a1a;
-}
-#practice-area h4 {
-  color: #ffffff;
-}
-/*==========07) Practice Area Section End==========*/
-
-/*==========08) Lawyers Section Start==========*/
-#lawyers .card {
-  transition: all 0.7s ease;
-  border: 3px solid #cecbcb;
-}
-#lawyers .card:hover {
-  cursor: pointer;
-  box-shadow: var(--box-shadow);
-  transform: scale(1.1);
-}
-#lawyers .card-body {
-  padding: 5px;
-}
-#lawyers .card-body p {
-  margin-bottom: 5px;
-}
-/*==========08) Lawyers Section End==========*/
-
-/*==========09) Clients Section Start==========*/
-#clients .clients-img {
-  box-shadow: 15px 15px 0px var(--gold);
-}
-#clients .owl-theme .owl-dots .owl-dot.active span,
-#clients .owl-theme .owl-dots .owl-dot:hover span {
-  background: var(--gold) !important;
-}
-/*==========09) Clients Section End==========*/
-
-/*==========10) Publications Section Start==========*/
-#publications .card-body h4 {
-  margin-bottom: 0;
-}
-#publications .card-text {
-  padding: 8px;
-}
-#publications .card .card-footer {
-  display: flex;
-  justify-content: space-between;
-}
-/*==========10) Publications Section End==========*/
-
-/*==========11) FAQ Section Start==========*/
-#one,
-#two,
-#three,
-#four,
-#five,
-#six {
-  border-bottom: 2px solid var(--gold);
-}
-.faq-content-2 {
-  background-color: var(--gold) !important;
-  color: #000;
-  font-weight: 500;
-}
-#faq {
-  background-color: var(--marian-blue);
-}
-/*==========11) FAQ Section End=========*/
-
-/*==========12) Contact Section Start==========*/
-.form-control {
-  border: none;
-  border-bottom: 1px solid #ffffff;
-  margin-bottom: 10px;
-  padding: 15px 1px;
-  outline: none;
-  width: 18rem;
-  font-family: var(--Inconsolata);
-}
-/* #message{
-	padding:50px 0;
-} 
-*/
-.form .btn {
-  display: block;
-  margin: 0 auto;
-  padding: 6px 20px;
-  width: 7rem;
-  background-color: var(--gold);
-  border: none;
-  color: #111;
-  font-weight: 600;
-}
-.form .btn:hover {
-  background-color: #111;
-  color: var(--gold);
-}
-.map {
-  box-shadow: -25px 25px 1px var(--gold);
+  font-size: 18px;
 }
 
-.wrapper {
-  position: relative;
-  width: 420px;
-  height: 440px;
-  background: var(--marian-blue);
-  backdrop-filter: blur(20px);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  color: #fff;
-  border-radius: 10px;
-  left: 40%;
-  padding: 30px 40px;
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  transition: height 0.2s ease;
-}
-
-/* Add these lines to your existing CSS code */
-
-.wrapper .form-box {
-  width: 100%;
-  transition: transform 0.18s ease;
-}
-
-.wrapper .form-box.login {
-  transition: transform 0.18s ease;
-  transform: translateX(0);
-  right: 2rem;
-}
-.wrapper .form-box.register {
+#footer {
   position: absolute;
-  transform: translateX(400px);
-}
-
-.wrapper.active .form-box.login {
-  transition: none;
-  transform: translateX(-400px);
-}
-
-.wrapper.active .form-box.register {
-  transition: transform 0.18s ease;
-  transform: translateX(0);
-}
-
-.login-link a,
-.register-link a {
-  text-decoration: none; /* Remove text decoration */
-  color: var(--gold); /* Set the color for the links */
-}
-
-.login-link a:hover,
-.register-link a:hover {
-  text-decoration: solid; /* Add underline on hover if needed */
-  color: var(--fluorescent-cyan);
-  font-family: var(--Inconsolata);
-}
-@media (max-width: 767px) {
-  .form-control {
-    border: none;
-    border-bottom: 1px solid #999;
-    margin-bottom: 10px;
-    padding: 15px 1px;
-    outline: none;
-    width: 18rem;
-    font-family: var(--Inconsolata);
-  }
-  /* #message{
-    padding:50px 0;
-  } 
-  */
-  .form .btn {
-    display: block;
-    margin: 0 auto;
-    padding: 6px 20px;
-    width: 7rem;
-    background-color: var(--gold);
-    border: none;
-    color: #111;
-    font-weight: 600;
-  }
-  .form .btn:hover {
-    background-color: #111;
-    color: var(--gold);
-  }
-  .map {
-    box-shadow: -25px 25px 1px var(--gold);
-  }
-
-  .wrapper {
-    position: relative;
-    width: 420px;
-    height: 440px;
-    background: var(--marian-blue);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border-radius: 10px;
-    left: 40%;
-    padding: 30px 40px;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transition: height 0.2s ease;
-  }
-
-  /* Add these lines to your existing CSS code */
-
-  .wrapper .form-box {
-    width: 100%;
-    transition: transform 0.18s ease;
-  }
-
-  .wrapper .form-box.login {
-    transition: transform 0.18s ease;
-    transform: translateX(0);
-    right: 2rem;
-  }
-  .wrapper .form-box.register {
-    position: absolute;
-    transform: translateX(400px);
-  }
-
-  .wrapper.active .form-box.login {
-    transition: none;
-    transform: translateX(-400px);
-  }
-
-  .wrapper.active .form-box.register {
-    transition: transform 0.18s ease;
-    transform: translateX(0);
-  }
-
-  .login-link a,
-  .register-link a {
-    text-decoration: none; /* Remove text decoration */
-    color: var(--gold); /* Set the color for the links */
-  }
-
-  .login-link a:hover,
-  .register-link a:hover {
-    text-decoration: solid; /* Add underline on hover if needed */
-    color: var(--fluorescent-cyan);
-    font-family: var(--Inconsolata);
-  }
-}
-/*==========12) Contact Section End========*/
-
-/*==========13) Footer Section Start==========*/
-/*==========13) Footer Section End==========*/
-
-/*=========Media Query Start========*/
-@media (max-width: 991px) {
-  #hero .hero-content .offset-md-2 {
-    margin: 0 auto;
-  }
-}
-@media (max-width: 767px) {
-  #hero .hero {
-    background-size: contain;
-  }
-  #hero .hero-heading {
-    color: #111111 !important;
-  }
-  #about-us .expertise {
-    margin-top: 25px;
-  }
-  #lawyers .downteam {
-    margin-top: 15px;
-  }
-  #clients .clients {
-    margin-right: 145px;
-    margin-bottom: 15px;
-  }
-  #publications .pbl {
-    margin-top: 15px;
-  }
-  #publications .publication-card {
-    width: 70%;
-    display: block;
-    margin: 0 auto;
-  }
-  #contact .map-frame {
-    margin-left: 135px;
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 575px) {
-  #lawyers .card {
-    margin: 40px auto;
-    width: 60%;
-  }
-  #clients .clients {
-    width: 60%;
-    margin: 0 auto;
-  }
-  #publications .card-footer {
-    padding: 0;
-  }
-  #contact iframe {
-    display: none;
-  }
-  #contact .map-frame {
-    margin: 0 auto;
-    width: 60%;
-  }
-  #contact .map {
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 380px) {
-  header .navbar-brand {
-    text-align: center;
-  }
-  header .navbar-toggler {
-    margin: 0 auto;
-  }
-}
-/*==========Media Query End==========*/
-
-/* ===========popup================ */
-.lawyers-preview {
-  position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
-  height: 155vh;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  background-size: cover;
   display: none;
-  align-items: center;
   justify-content: center;
-}
-
-.lawyers-preview .preview {
-  display: none;
-  left: 30%;
-  padding: 3rem;
-  text-align: center;
-  background: #fff;
-  position: relative;
-  margin: 2rem;
-  width: 30rem;
-  font-size: 1.5rem;
-  border-radius: 2rem;
-}
-
-.lawyers-preview .preview.active {
-  display: inline-block;
-}
-
-.lawyers-preview .preview img {
-  height: 10rem;
-}
-
-.lawyers-preview .preview .fa-xmark {
-  position: absolute;
-  top: 1rem;
-  right: 1.5rem;
-  cursor: pointer;
-  color: #444;
-  font-size: 2rem;
-}
-
-.lawyers-preview .preview .fa-xmark:hover {
-  transform: rotate(180deg);
-}
-
-.lawyers-preview .preview h3 {
-  color: #444;
-  padding: 0.5rem 0;
-  font-size: 2rem;
-}
-
-.lawyers-preview .preview .stars {
-  padding-bottom: 1rem;
-}
-
-.lawyers-preview .preview .stars i {
-  color: gold;
-  font-size: 2rem;
-}
-
-.lawyers-preview .preview .stars span {
-  color: #999;
-}
-
-.lawyers-preview .preview p {
-  line-height: 1.5;
-  padding: 1rem 0 3rem 0;
-
-  font-size: 1rem;
-  color: #000;
-}
-
-.lawyers-preview .preview .mobile {
-  bottom: 7rem;
-  top: 4rem;
-  font-size: 1.3rem;
-  color: royalblue;
-}
-
-.lawyers-preview .preview .email {
-  padding: 1rem 0;
-  font-size: 1.3rem;
-  color: green;
-}
-
-.lawyers-preview .preview .buttons {
-  display: inline-block;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-  border-radius: 3rem;
-}
-
-.lawyers-preview .preview .buttons a {
-  flex: 1 1 16rem;
-  padding: 1rem;
-  font-size: 1rem;
-  color: 0.1rem solid #444;
-  text-decoration: none;
-}
-
-.lawyers-preview .preview .buttons a.mail {
-  background: #525151;
-  color: #fff;
-}
-
-.lawyers-preview .preview .buttons a.mail:hover {
-  background: #111;
-  border-radius: 2rem;
-}
-
-.lawyers-preview .preview .buttons a.call {
-  background: #ff0010;
-  color: #fff;
-}
-.lawyers-preview .preview .buttons a.call:hover {
-  background: #27ae60;
-  color: #ff0010;
-  border-radius: 2rem;
-}
-
-#page-top {
-  height: 100vh;
-
-  background-color: rgb(255, 255, 255);
-
-  /* background-color: rgb(161, 159, 159) a4a; */
-}
-
-/* ========== Home page ============ */
-.banner {
+  column-gap: 1em;
   width: 100%;
-  height: 100vh;
-  background-image: url("images\bg_2.jpg");
-  background-size: cover;
-  background-position: center;
+  height: 100px;
+}
+
+.icon-wrapper {
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.control-icon {
+  display: block;
+  padding: 15px;
+  background-color: #1f1f1f8e;
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
 }

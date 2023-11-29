@@ -1,0 +1,210 @@
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main{
+    width: 100%;
+    background: url(pic/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 140vh;
+    position: relative;
+    font-family: sans-serif;
+  }
+  /* styles.css */
+  
+  /* Style for the logo */
+  .logo {
+    width: 500px;
+    height:200px;
+    border: 2px solid white;
+    border-radius: 8px;
+    /* Add any other styles you want here */
+    
+  }
+  
+  
+  .navbar{
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar .logo{
+    width: 160px;
+    cursor: pointer;
+    margin-top: -3%;
+    margin-left: -2%;
+  }
+  /* Style for the smaller and blue heading */
+.small-blue-heading {
+  font-size: 30px; /* Adjust font size as desired */
+  letter-spacing: 1px;
+  font-weight:100;
+  color: rgb(23, 23, 133); /* Change to the desired color */
+}
+  
+  ul{
+    position:fixed left;
+    margin-top: 10%;
+  }
+  
+  ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+  }
+  
+  ul li a{
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: darkslategray;
+    margin-top: -3%;
+    transition: .4s ease;
+  
+  }
+  
+  ul li a:hover{
+    color:rgb(38, 38, 219);
+  }
+  
+  .info{
+    margin-left: 7%;
+    margin-top: 6%;
+    position:absolute;
+    top: 150%;
+    bottom: 10%;
+  }
+  
+  .info h1{
+    font-size: 65px;
+    color: rgb(36,32,30);
+  }
+  
+  .info h3{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+  }
+  
+  .info span{
+    color:rgb(19, 19, 94);
+  }
+  
+  
+  .info a:hover{
+    background: rgb(59,174,209);
+  }
+  /* Styles for the button */
+  button#myButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none; /* Remove default button outline */
+    transition: box-shadow 0.3s ease; /* Transition for glow effect */
+  }
+  
+  /* Glow effect on hover */
+  button#myButton:hover {
+    box-shadow: 0 0 10px 3px black; /* Change the color and size as needed */
+  }
+  
+  /* Glow effect on click */
+  button#myButton:active {
+    box-shadow: 0 0 10px 3px #3498db; /* Change the color and size as needed */
+  }
+  
+  .container {
+    position: relative;
+    width: 100%; /* Adjust width if needed */
+    height: 500px; /* Adjust height if needed */
+  }
+  
+  .container img {
+    position: absolute;
+    bottom: -10%;
+    right: -10%;
+    width: 500px; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  
+  .image:hover .lawyer{
+    left: 100%;
+  }
+  /* styles.css */
+  
+  /* Style for the bouncing image */
+  .bounce-image {
+    width: 350px;
+    /* Other styles for your image */
+    position: absolute;
+    height: 200%;
+    bottom: 0;
+  
+    animation: bounce 2s infinite; /* Apply the bounce animation */
+  }
+  
+  
+  /* Define the bouncing animation */
+  @keyframes bounce {
+    0% {
+      transform: translateY(0); /* Initial position */
+    }
+    50% {
+      transform: translateY(-20px); /* Bounce up */
+    }
+    100% {
+      transform: translateY(0); /* Return to the original position */
+    }
+  }/* styles.css */
+
+/* Styles for the card */
+.card {
+    width: 300px; /* Adjust width as needed */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px; /* Adjust margin as needed */
+  }
+  
+  /* Image styling */
+  .card img {
+    width: 100%; /* Ensures the image takes the full width of the card */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes extra space below the image */
+  }
+  
+  /* Styles for card content */
+  .card .card-body {
+    padding: 20px; /* Adjust padding as needed */
+  }
+  
+  .card h5 {
+    font-size: 24px; /* Adjust font size */
+    margin-bottom: 10px; /* Adjust spacing between name and role */
+  }
+  
+  .card p {
+    font-size: 16px; /* Adjust font size */
+    color: #555; /* Adjust text color */
+  }
+/* Scale the image slightly on hover */
+.card:hover img {
+    transform: scale(1.1); /* Adjust the scale factor as desired */
+  }
+  
+  /* Scale the card slightly on hover (optional) */
+  .card:hover {
+    transform: scale(1.05); /* Adjust the scale factor as desired */
+  }  

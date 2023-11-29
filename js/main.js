@@ -19,7 +19,12 @@ $(document).ready(function () {
 		}
 	});
 
-
+	function changeButtonStyle() {
+		var button = document.getElementById('myButton');
+		button.style.backgroundColor = '#ff6600'; // Change to the desired color
+		button.style.color = 'white'; // Change to the desired text color
+	}
+	
 	// Navbar Fixed
 
 	let nav_offset_top = $('#header').height() + 50;

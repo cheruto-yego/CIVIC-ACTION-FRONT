@@ -23,6 +23,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 
+    
+    <link rel="stylesheet" href="style.css">
+
 
   <title>ETTAKA_LYO</title>
   <style>
@@ -80,46 +83,19 @@
 
 
         <!-- Navigation Menu Start -->
-        <header id="header">
-            <nav class="navbar navbar-light navbar-expand-lg main" id="mainNav">
-                <div class="contain">
-
-                    <!-- Toggle Button -->
-                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                    data-target="#navbarResponsive" area-controls="navbarResponsive
-                    " aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <!-- Nav Menu Start-->
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav ml-auto">
-                          <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
-                          </li>
-                            <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="lawyers.html">Lawyers</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="contact.html">Schedule A Call</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="practice-area.html">Key Cores</a>
-                                <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="about-us.html">About Us</a>
-                                </li>          
-                                <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="publications.html">Services</a>
-                                </li>
-                                <!-- <li class="nav-item"> -->
-                                <!-- <a class="nav-link js-scroll-trigger" href="#faq">FAQ</a> -->
-                            </li>
-                        </ul>
-                    </div>
-                <!-- Nav Menu End-->
+        <div class="main">
+            <div class="navbar">
+                  
+        
+                <div> 
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="lawyers.html">LAWYERS</a></li>
+                        <li><a href="publications.html">SERVICES</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="about-us.html">ABOUT US</a></li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
         
 
         <div class="row pt-5">
@@ -140,15 +116,29 @@
                 <h1>SSEMANDA JOHN</h1>
                 <div class="card_content">
                 <p>Specializing in legal issues concerning land</p>
-                <p>Qualifications:</p>
-                <ul>
+                <h4>Qualifications:</h4>
+                <style>
+                    /* Style for horizontal list */
+                    ul.horizontal-list {
+                      list-style: none; /* Remove default bullets */
+                      padding: 0; /* Remove default padding */
+                      margin: 0; /* Remove default margin */
+                      display: flex; /* Use flexbox */
+                    }
+                    
+                    /* Style for list items */
+                    ul.horizontal-list li {
+                      margin-right: 50px; /* Adjust spacing between items */
+                    }
+                  </style>
+                 <ul class="horizontal-list">
                     <li>Land Use Planning</li>
                     <li>Real Estate Law</li>
                     <li>Property Disputes</li>
                     <!-- Add more qualifications as needed -->
                 </ul>
             
-                <p>Contact Information:</p>
+                <h4>Contact Information:</h4>
                 <p>Phone: <a href="tel:+123456789">0778926789</a></p>
                 <p>Email: <a href="mailto:lawyer@example.com">ssejohn@gmail.com</a></p>
             </div>
