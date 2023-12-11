@@ -4,9 +4,9 @@ let client = AgoraRTC.createClient({ mode: "rtc", codec: "vp8" });
 //#2
 let config = {
   appid: "2c951f9d7f1b40ce97430e98ea90e37a",
-  token:"007eJxTYIhxP8rrILb+4oUzixP/PHN/ydvEwcL6Vnlx/nb/po9di/cqMKQYJ5sYppiaWyYnJ5tYpBklphkZJVskWpgmJqYkGRkZpF/KSG0IZGTQdvjIwsgAgSA+G0NyTmJxcTEDAwDJRCFF",
+  token:"007eJxTYGANKDU5WMa4c7rU+pXReaf2+qbusLR58klu+lPZm4t6Dk1TYEgxTjYxTDE1t0xOTjaxSDNKTDMySrZItDBNTExJMjIy+POxLLUhkJFh71IJRkYGCATxmRlyEssZGABphSDL",
   uid: null,
-  channel: "classs",
+  channel: "law",
 };
 
 //#3 - Setting tracks for when user joins
