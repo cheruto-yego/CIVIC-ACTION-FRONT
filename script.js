@@ -4,7 +4,7 @@ let client = AgoraRTC.createClient({ mode: "rtc", codec: "vp8" });
 //#2
 let config = {
   appid: "2c951f9d7f1b40ce97430e98ea90e37a",
-  token:"007eJxTYNhdXPr38pS0ri37Zp+/nOe8/t66k9+KNlb4NutsigpI4F6pwJBinGximGJqbpmcnGxikWaUmGZklGyRaGGamJiSZGRkEHG8OrUhkJEhsmMSAyMUgvjMDDmJ5QwMAD74Ij8=",
+  token:"007eJxTYMgTe6ixYVee7JqV5vnLi/l7t/RIi1dumjO1VHXr001PvixVYEgxTjYxTDE1t0xOTjaxSDNKTDMySrZItDBNTExJMjIyeLGjLrUhkJFBuLOekZEBAkF8ZoacxHIGBgB0FiB4",
   uid: null,
   channel: "law",
 };
